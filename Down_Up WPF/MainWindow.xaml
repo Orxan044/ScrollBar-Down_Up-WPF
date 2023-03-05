@@ -1,0 +1,41 @@
+﻿<Window x:Class="Down_Up_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Down_Up_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="450" Width="800" >
+
+        <Label
+            Name="about"
+            Margin="220,50,220,300"
+            FontSize="45"
+            FontStyle="Italic"
+            
+            >Down Or Up Click</Label>
+        
+        <Button Height="50" Width="50" Margin="0,0,620,0"
+                FontSize="15" 
+                Click="Button_Click"
+            >Down</Button>
+        
+        <Button Height="50" Width="50" Margin="620,0,0,0"
+                FontSize="20"
+                Click="Button_Click2"
+            >Up</Button>
+        
+        <ScrollBar
+            Name="Barmen"
+            HorizontalAlignment="Center" 
+            Orientation="Horizontal" 
+            Width="550" Height="50"
+            Background="Green" 
+            PreviewMouseLeftButtonDown ="ScrollBar_PreviewMouseLeftButtonDown"
+            PreviewMouseRightButtonDown ="ScrollBar_PreviewMouseRightButtonDown"
+            ></ScrollBar>
+
+
+    </Grid>
+</Window>
